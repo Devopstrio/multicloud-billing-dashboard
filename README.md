@@ -4,17 +4,16 @@
 
 <h1>Multi-Cloud Billing Dashboard</h1>
 
-<p><strong>The Institutional-Grade Platform for Global FinOps, Multi-Cloud Cost Optimization, and Cloud Economics Orchestration</strong></p>
+<p><strong>The Institutional-Grade Platform for Global FinOps, Multi-Cloud Cost Optimization, and Cloud Economics Orchestration.</strong></p>
 
-[![Standard: FinOps--Foundation](https://img.shields.io/badge/Standard-FinOps--Foundation-gold.svg?style=for-the-badge&labelColor=000000)]()
-[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-gold.svg?style=for-the-badge&labelColor=000000)]()
-[![Orchestration: Multi--Cloud](https://img.shields.io/badge/Orchestration-Multi--Cloud-blue.svg?style=for-the-badge&labelColor=000000)]()
-[![Strategy: Cloud--Economics](https://img.shields.io/badge/Strategy-Cloud--Economics-emerald.svg?style=for-the-badge&labelColor=000000)]()
+[![Standard: FinOps-Excellence](https://img.shields.io/badge/Standard-FinOps--Excellence-gold.svg?style=for-the-badge&labelColor=000000)]()
+[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-emerald.svg?style=for-the-badge&labelColor=000000)]()
+[![Focus: Cloud--Economics](https://img.shields.io/badge/Focus-Cloud--Economics-indigo.svg?style=for-the-badge&labelColor=000000)]()
 
 <br/>
 
 > **"Visibility is the first pillar of FinOps; Optimization is the goal."** 
-> Multi-Cloud Billing Dashboard is a flagship solution for FinOps Practitioners, Cloud Economists, and Engineering Leaders. By aggregating costs across AWS, Azure, and GCP into a unified model, it enables organizations to achieve institutional-scale transparency and automated cost governance.
+> **Multi-Cloud Billing Dashboard** is an enterprise-grade platform designed to provide a secure, measurable, and highly automated foundation for global cloud economics. It orchestrates the complex lifecycle of cloud spend—from multi-cloud billing ingestion and standardized normalization to automated cost attribution and unified FinOps-driven governance.
 
 </div>
 
@@ -22,623 +21,264 @@
 
 ## 🏛️ Executive Summary
 
-The **Multi-Cloud Billing Dashboard Platform** is a specialized flagship solution designed for Global Enterprises, Finance Business Units, and SRE Organizations. As organizations distribute workloads across multiple clouds, the fragmentation of billing data (AWS CUR, Azure Consumption, GCP BigQuery) creates an existential lack of visibility. This platform addresses these complexities using a cloud-native, "economics-first" framework.
+Fragmented billing data and invisible cloud expenses are strategic operational liabilities; lack of centralized cost visibility is a primary barrier to organizational efficiency. Organizations fail to maintain a lean cloud budget not because of a lack of savings, but because of fragmented data standards, lack of automated attribution, and an inability to orchestrate cloud economics with operational precision.
 
-This platform provides a **Unified Multi-Cloud Cost Plane**. It demonstrates how to orchestrate institutional FinOps—using **FastAPI**, **React 18**, **PostgreSQL**, and **Terraform**—to create a "Cost-Conscious" engineering culture. By providing **Cost Normalization**, **Tag-Based Allocation**, **Predictive Forecasting**, and **Automated Optimization**, it enables organizations to move from "Uncontrolled Spend" to "Unit Economics Excellence."
-
----
-
-## 📉 The "Cloud Spend Fragmentation" Problem
-
-Enterprises scaling multi-cloud environments face existential challenges:
-- **Billing Data Silos**: Each cloud provider has a unique data format, making it impossible to answer "How much did Service X cost globally?"
-- **Allocation Gaps**: Lack of consistent tagging and resource ownership leads to "Untagged Spend" and budget accountability issues.
-- **Forecasting Blindness**: Manual spreadsheets are insufficient for predicting complex, variable cloud costs, leading to budget surprises.
-- **Optimization Inertia**: Without a central hub for savings recommendations (RIs, SPs, Rightsizing), organizations leave millions in "Cloud Waste" on the table.
+This platform provides the **Financial Intelligence Plane**. It implements a complete **Enterprise FinOps-as-Code Framework**, enabling Finance and Engineering teams to manage cloud spend as a first-class citizen. By automating the normalization of disparate billing exports and orchestrating real-time cost attribution, we ensure that every organizational asset—from global edge CDNs to backend data lakes—is cost-accounted for by default, audited for history, and strictly aligned with institutional cloud spending frameworks.
 
 ---
 
-## 🚀 Strategic Drivers & Business Outcomes
+## 📐 Architecture Storytelling: Principal Reference Models
 
-### 🎯 Strategic Drivers
-- **Standardized Cost Normalization**: Converting disparate provider billing formats into a single, unified data model (FinOps Open Cost & Usage Spec).
-- **Automated Cost Attribution**: Implementing rule-based and tag-based allocation engines to drive 100% accountability.
-- **Predictive Cloud Economics**: Using time-series forecasting to provide accurate financial planning and budget guardrails.
+### 1. Principal Architecture: Global Multi-Cloud Billing & Financial Intelligence Plane
+This diagram illustrates the end-to-end flow from multi-cloud billing ingestion and data normalization to cost attribution, optimization, and institutional FinOps auditing.
 
-### 💰 Business Outcomes
-- **25% Reduction in Cloud Waste**: By surfacing and automating the application of savings recommendations across the entire multi-cloud estate.
-- **100% Billing Transparency**: Enabling real-time showback and chargeback for every team, service, and project.
-- **Institutional Compliance**: Enforcing global cost governance policies to prevent rogue spending and budget overruns.
+```mermaid
+graph LR
+    %% Subgraph Definitions
+    subgraph BillingIngress["Billing & Usage Ingress"]
+        direction TB
+        AWSCUR["AWS CUR (S3)"]
+        AzureCost["Azure Consumption API"]
+        GCPBilling["GCP Billing (BigQuery)"]
+    end
+
+    subgraph IntelligenceEngine["Financial Intelligence Hub"]
+        direction TB
+        API["FastAPI FinOps Gateway"]
+        Normalizer["Billing Schema Normalizer"]
+        Attributor["Cost & Tag Attributor"]
+        Optimizer["Savings & RI Optimizer"]
+    end
+
+    subgraph AnalyticsPlane["Economic Visualization Mesh"]
+        direction TB
+        Dashboards["Unified Cost Dashboards"]
+        Anomalies["Spend Spike Detector"]
+        Forecasts["Predictive Spend Engine"]
+    end
+
+    subgraph OperationsHub["Institutional FinOps Hub"]
+        direction TB
+        Scorecard["Financial Health Score"]
+        Analytics["Spend & Efficiency Stats"]
+        Audit["Forensic Billing Metadata Lake"]
+    end
+
+    subgraph DevOps["FinOps-as-Code Orchestration"]
+        direction TB
+        TF["Terraform FinOps Modules"]
+        Policy["Cost Governance Policy"]
+        ChatOps["FinOps Approval Hub"]
+    end
+
+    %% Flow Arrows
+    BillingIngress -->|1. Ingest Raw Data| API
+    API -->|2. Normalize Schema| Normalizer
+    Normalizer -->|3. Attribute Cost| Attributor
+    Attributor -->|4. Optimize Commit| Optimizer
+    
+    Optimizer -->|5. Store Metrics| AnalyticsPlane
+    AnalyticsPlane -->|6. Visualize spend| OperationsHub
+    Optimizer -->|7. Trigger Purchase| DevOps
+    
+    API -->|8. Visualize Health| Scorecard
+    Scorecard -->|9. Track Budget| Analytics
+    Scorecard -->|10. Record Result| Audit
+    
+    TF -->|11. Provision Hub| IntelligenceEngine
+    Policy -->|12. Enforce Budgets| Optimizer
+    Audit -->|13. Improve Forecasts| AnalyticsPlane
+
+    %% Styling
+    classDef ingress fill:#f5f5f5,stroke:#616161,stroke-width:2px;
+    classDef intel fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
+    classDef analytics fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef ops fill:#ede7f6,stroke:#311b92,stroke-width:2px;
+    classDef devops fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+
+    class BillingIngress ingress;
+    class IntelligenceEngine intel;
+    class AnalyticsPlane analytics;
+    class OperationsHub ops;
+    class DevOps devops;
+```
+
+### 2. The Billing Telemetry Lifecycle Flow
+The continuous path of a billing record from initial ingestion and normalization to active enrichment, attribution, and institutional forensic auditing.
+
+```mermaid
+graph LR
+    Ingest["Ingest Record"] --> Normalize["Normalize Schema"]
+    Normalize --> Enrich["Enrich Context"]
+    Enrich --> Attribute["Attribute Cost"]
+    Attribute --> Audit["Forensic Audit"]
+```
+
+### 3. Cross-Cloud Cost Aggregation Topology
+Strategically centralizing disparate provider billing formats (AWS CUR, Azure Cost Management, GCP Billing Export) into a unified institutional model for global spend analysis.
+
+```mermaid
+graph LR
+    Hub["Unified FinOps Hub"] -->|Ingest| AWS["AWS Cloud"]
+    Hub -->|Ingest| Azure["Azure Cloud"]
+    Hub -->|Ingest| GCP["GCP Cloud"]
+    Hub --- Model["FinOps Open Schema"]
+```
+
+### 4. Cost Attribution & Tagging Logic Flow
+Mapping raw billing line items to specific Business Units, Projects, and Cost Centers using a combination of resource tags, hierarchy rules, and identity context.
+
+```mermaid
+graph LR
+    Item["Raw Billing Item"] --> Match["Tagging Engine"]
+    Tags["Resource Tags"] --> Match
+    Match --> Result["Attributed Cost"]
+    Result --- Unit["Business Unit Context"]
+```
+
+### 5. Reserved Instance & Savings Plan Optimization Flow
+Identifying opportunities for commit-based savings by analyzing historical usage patterns and recommending the optimal mix of Reserved Instances and Savings Plans.
+
+```mermaid
+graph TD
+    Usage["Usage History"] --> Analyzer["Commit Analyzer"]
+    Analyzer -->|Recommend| Purchase["RI/SP Purchase"]
+    Purchase --> Savings["ROI Calculation"]
+    Savings --> UI["Savings Dashboard"]
+```
+
+### 6. Anomaly Detection & Spend Guardrail Flow
+Using machine learning to identify sudden, unexpected spikes in cloud spend and alerting stakeholders before budget thresholds are breached.
+
+```mermaid
+graph LR
+    Live["Live Daily Spend"] --> Model["Baseline Pattern"]
+    Live --> Detect["Anomaly Engine"]
+    Detect -->|Spike| Alert["Budget Breach Alert"]
+    Alert --- Investigation["FinOps Incident Room"]
+```
+
+### 7. Institutional Financial Scorecard
+Grading organizational performance based on key financial indicators: Budget Accuracy, Cost Efficiency (Wastage), and Reserved Instance Coverage.
+
+```mermaid
+graph TD
+    Post["FinOps Health: 95%"] --> Risk["Wasted Spend: 5%"]
+    Post --- C1["Accuracy (98%)"]
+    Post --- C2["RI Coverage (92%)"]
+```
+
+### 8. Identity & RBAC for FinOps Governance
+Managing fine-grained access to cost dashboards, savings recommendations, and budget policies between CFOs, FinOps Analysts, and Engineering Managers.
+
+```mermaid
+graph TD
+    CFO["CFO"] --> Hub["Observe Global ROI"]
+    Analyst["FinOps Analyst"] --> Plan["Optimize Commit"]
+    Manager["Eng. Manager"] --> View["Observe Team Spend"]
+```
+
+### 9. IaC Deployment: FinOps-as-Code Framework
+Using modular Terraform to deploy and manage the versioned distribution of the billing hubs, data processors, and forensic metadata lakes.
+
+```mermaid
+graph LR
+    HCL["Infrastructure Code"] --> TF["Terraform Apply"]
+    TF --> Engine["FinOps Control Plane"]
+    Engine --> Clusters["High-Throughput Processors"]
+```
+
+### 10. AIOps Forecast & Trend Validation Flow
+Using advanced time-series modeling to predict future cloud spend based on historical growth patterns, seasonal variations, and planned infrastructure changes.
+
+```mermaid
+graph LR
+    History["Historical Spend"] --> Model["Time-Series Model"]
+    Model --> Forecast["Predicted Spend"]
+    Forecast -->|Alert| Budget["Budget Planning Hub"]
+```
+
+### 11. Metadata Lake for Forensic Financial Audit
+Storing long-term records of every billing line item, adjustment, and optimization decision for institutional record-keeping, compliance auditing, and post-incident forensics.
+
+```mermaid
+graph LR
+    Record["Billing Record"] --> Stream["Forensic Stream"]
+    Stream --> Lake["FinOps Metadata Lake"]
+    Lake --> Trends["Spend & Efficiency Trends"]
+```
 
 ---
 
-## 📐 Architecture Storytelling: 80+ Advanced Diagrams
-
-### 1. Executive Multi-Cloud FinOps Architecture
-*The global flow of billing data from provider exports to executive insights.*
-```mermaid
-graph TD
-    subgraph "Cloud Providers"
-        AWS[AWS CUR / S3]
-        AZ[Azure Consumption API]
-        GCP[GCP Billing / BigQuery]
-    end
-
-    subgraph "Ingestion & Normalization"
-        Ingest[Multi-Cloud Ingestion Engine]
-        Normalize[Cost Normalization Layer]
-    end
-
-    subgraph "Processing Engines"
-        Alloc[Allocation Engine]
-        Forecast[Forecasting Engine]
-        Opt[Optimization Engine]
-    end
-
-    subgraph "Governance & UI"
-        API[Billing API]
-        Web[FinOps Hub]
-    end
-
-    AWS --> Ingest
-    AZ --> Ingest
-    GCP --> Ingest
-    Ingest --> Normalize
-    Normalize --> Alloc
-    Normalize --> Forecast
-    Normalize --> Opt
-    Alloc --> API
-    Forecast --> API
-    Opt --> API
-    API --> Web
-```
-
-### 2. Cost Normalization Flow
-*How the platform converts provider-specific data into a unified model.*
-```mermaid
-sequenceDiagram
-    participant Provider as AWS/Azure/GCP
-    participant Ingest as Ingestion Engine
-    participant Model as Unified Cost Model
-    participant DB as Billing Database
-
-    Provider->>Ingest: Push/Pull Billing Export
-    Ingest->>Ingest: Extract Provider Schema
-    Ingest->>Model: Map to Unified Schema (Dimensions/Metrics)
-    Model->>Model: Currency Conversion (FX Rate)
-    Model->>DB: Upsert Normalized Entry
-    DB-->>Model: Success
-```
-
-### 3. Tag-Based Cost Allocation Lifecycle
-```mermaid
-stateDiagram-v2
-    [*] --> Discovered: Entry Ingested
-    Discovered --> Scanned: Tags Extracted
-    Scanned --> Mapped: Matched to Team/Project
-    Mapped --> Allocated: Final Cost Calculated
-    Allocated --> Reported: Visible in Dashboard
-    Scanned --> Remediation: If Missing Tags
-```
-
-### 4. Predictive Forecasting Logic
-```mermaid
-graph LR
-    History[Historical Cost Data] --> Model[Time-Series Model]
-    Model --> Trend[Trend Analysis]
-    Model --> Seasonality[Seasonality Patterns]
-    Trend --> Output[Cost Forecast]
-    Seasonality --> Output
-    Output --> Alerts[Budget Breach Warning]
-```
-
-### 5. Multi-Cloud Budget Guardrails
-```mermaid
-graph TD
-    Req[Cloud Resource Creation] --> Policy[Governance Engine]
-    Policy --> Budget[Check Team Budget]
-    Budget --> Result{ALLOW / WARN / DENY}
-    Result --> Notify[Slack / Email Alert]
-```
-
-### 6. Savings Recommendation Pipeline
-```mermaid
-graph LR
-    Usage[Usage Analytics] --> Analyze[Rightsizing Engine]
-    Analyze --> Identify[Identify Oversized Instances]
-    Identify --> Calculate[Potential Savings Calculation]
-    Calculate --> Dashboard[Surface Recommendation]
-```
-
-### 7. Unit Economics Mapping
-```mermaid
-graph LR
-    TotalCost[Total Cloud Spend] --> Div[Divide by Users/Requests]
-    Div --> UnitCost[Cost per Transaction]
-    UnitCost --> Efficiency[Economic Efficiency Score]
-```
-
-### 8. Chargeback / Showback Flow
-```mermaid
-graph LR
-    Alloc[Allocated Costs] --> Invoicing[Chargeback Engine]
-    Invoicing --> TeamA[Invoice: Team A]
-    Invoicing --> TeamB[Invoice: Team B]
-```
-
-### 9. Anomaly Detection Workflow
-```mermaid
-graph TD
-    Cost[Daily Cost] --> Stats[Statistical Analysis]
-    Stats --> Detect[Anomaly Detection]
-    Detect -->|Spike| Trigger[Trigger Investigation]
-```
-
-### 10. Executive FinOps Dashboard
-```mermaid
-graph LR
-    API[Backend API] --> React[Vite / React Hub]
-    React --> Recharts[Visual Analytics]
-    Recharts --> Executive[Cloud Economics Insights]
-```
-
-### 11. Multi-cloud billing flow
-```mermaid
-graph LR
-    M[Mult] --> B[Bill]
-```
-
-### 12. Cost ingestion flow
-```mermaid
-graph LR
-    C[Cost] --> I[Inge]
-```
-
-### 13. Cost allocation flow
-```mermaid
-graph LR
-    C[Cost] --> A[Allo]
-```
-
-### 14. Cost normalization flow
-```mermaid
-graph LR
-    C[Cost] --> N[Norm]
-```
-
-### 15. Forecasting pipeline
-```mermaid
-graph LR
-    F[Fore] --> P[Pipe]
-```
-
-### 16. Optimization engine flow
-```mermaid
-graph LR
-    O[Opti] --> E[Engi]
-```
-
-### 17. Budget tracking flow
-```mermaid
-graph LR
-    B[Budg] --> T[Trac]
-```
-
-### 18. Anomaly detection flow
-```mermaid
-graph LR
-    A[Anom] --> D[Dete]
-```
-
-### 19. Governance policy flow
-```mermaid
-graph LR
-    G[Gove] --> P[Poli]
-```
-
-### 20. Chargeback lifecycle
-```mermaid
-graph LR
-    C[Char] --> L[Life]
-```
-
-### 21. Showback lifecycle
-```mermaid
-graph LR
-    S[Show] --> L[Life]
-```
-
-### 22. Unit economics model
-```mermaid
-graph LR
-    U[Unit] --> E[Econ]
-```
-
-### 23. Tag-based attribution
-```mermaid
-graph LR
-    T[Tagb] --> A[Attr]
-```
-
-### 24. Savings recommendation flow
-```mermaid
-graph LR
-    S[Savi] --> R[Reco]
-```
-
-### 25. RI vs On-demand analysis
-```mermaid
-graph LR
-    R[RIvs] --> O[Onde]
-```
-
-### 26. Multi-tenant isolation
-```mermaid
-graph LR
-    M[Mult] --> I[Isol]
-```
-
-### 27. FinOps SDK map
-```mermaid
-graph LR
-    F[FinO] --> S[SDKm]
-```
-
-### 28. Infrastructure: Kubernetes
-```mermaid
-graph LR
-    I[Infr] --> K[Kube]
-```
-
-### 29. Infrastructure: Database
-```mermaid
-graph LR
-    I[Infr] --> D[Data]
-```
-
-### 30. Infrastructure: Redis
-```mermaid
-graph LR
-    I[Infr] --> R[Redi]
-```
-
-### 31. Infrastructure: Monitoring
-```mermaid
-graph LR
-    I[Infr] --> M[Moni]
-```
-
-### 32. Monitoring: Prometheus
-```mermaid
-graph LR
-    M[Moni] --> P[Prom]
-```
-
-### 33. Monitoring: Grafana
-```mermaid
-graph LR
-    M[Moni] --> G[Graf]
-```
-
-### 34. Monitoring: Alerts
-```mermaid
-graph LR
-    M[Moni] --> A[Aler]
-```
-
-### 35. CI/CD: Build pipeline
-```mermaid
-graph LR
-    C[CICD] --> B[Buil]
-```
-
-### 36. CI/CD: Test pipeline
-```mermaid
-graph LR
-    C[CICD] --> T[Test]
-```
-
-### 37. CI/CD: Deploy pipeline
-```mermaid
-graph LR
-    C[CICD] --> D[Depl]
-```
-
-### 38. Frontend: Dashboard
-```mermaid
-graph LR
-    F[Fron] --> D[Dash]
-```
-
-### 39. Frontend: Breakdown
-```mermaid
-graph LR
-    F[Fron] --> B[Brea]
-```
-
-### 40. Frontend: Forecast
-```mermaid
-graph LR
-    F[Fron] --> F[Fore]
-```
-
-### 41. API: Auth flow
-```mermaid
-graph LR
-    A[API] --> A[Auth]
-```
-
-### 42. API: Cost summary
-```mermaid
-graph LR
-    A[API] --> C[Cost]
-```
-
-### 43. API: Forecast data
-```mermaid
-graph LR
-    A[API] --> F[Fore]
-```
-
-### 44. API: Budget status
-```mermaid
-graph LR
-    A[API] --> B[Budg]
-```
-
-### 45. Worker: Ingestion
-```mermaid
-graph LR
-    W[Work] --> I[Inge]
-```
-
-### 46. Worker: Allocation
-```mermaid
-graph LR
-    W[Work] --> A[Allo]
-```
-
-### 47. Worker: Optimization
-```mermaid
-graph LR
-    W[Work] --> O[Opti]
-```
-
-### 48. Worker: Notification
-```mermaid
-graph LR
-    W[Work] --> N[Noti]
-```
-
-### 49. Collector: AWS
-```mermaid
-graph LR
-    C[Coll] --> A[AWSb]
-```
-
-### 50. Collector: Azure
-```mermaid
-graph LR
-    C[Coll] --> A[Azur]
-```
-
-### 51. Collector: GCP
-```mermaid
-graph LR
-    C[Coll] --> G[GCPb]
-```
-
-### 52. Policy: Budgeting
-```mermaid
-graph LR
-    P[Poli] --> B[Budg]
-```
-
-### 53. Policy: Tagging
-```mermaid
-graph LR
-    P[Poli] --> T[Tagg]
-```
-
-### 54. Integration: Billing API
-```mermaid
-graph LR
-    I[Inte] --> B[Bill]
-```
-
-### 55. Integration: Pricing API
-```mermaid
-graph LR
-    I[Inte] --> P[Pric]
-```
-
-### 56. Report: Executive
-```mermaid
-graph LR
-    R[Repo] --> E[Exec]
-```
-
-### 57. Report: Team-level
-```mermaid
-graph LR
-    R[Repo] --> T[Team]
-```
-
-### 58. Script: Ingest
-```mermaid
-graph LR
-    S[Scri] --> I[Inge]
-```
-
-### 59. Script: Analyze
-```mermaid
-graph LR
-    S[Scri] --> A[Anal]
-```
-
-### 60. Script: Report
-```mermaid
-graph LR
-    S[Scri] --> R[Repo]
-```
-
-### 61. Security: RBAC
-```mermaid
-graph LR
-    S[Secu] --> R[RBAC]
-```
-
-### 62. Security: Isolation
-```mermaid
-graph LR
-    S[Secu] --> I[Isol]
-```
-
-### 63. Metrics tracking
-```mermaid
-graph LR
-    M[Metr] --> T[Trac]
-```
-
-### 64. KPI tracking: Spend
-```mermaid
-graph LR
-    K[KPI] --> S[Spen]
-```
-
-### 65. KPI tracking: Savings
-```mermaid
-graph LR
-    K[KPI] --> S[Savi]
-```
-
-### 66. Optimization roadmap
-```mermaid
-graph LR
-    O[Opti] --> R[Road]
-```
-
-### 67. Value realization
-```mermaid
-graph LR
-    V[Valu] --> R[Real]
-```
-
-### 68. Institutional maturity
-```mermaid
-graph LR
-    I[Inst] --> M[Matu]
-```
-
-### 69. Strategy execution
-```mermaid
-graph LR
-    S[Stra] --> E[Exec]
-```
-
-### 70. Ecosystem map
-```mermaid
-graph LR
-    E[Ecos] --> M[Map]
-```
-
-### 71. Supply chain of cost
-```mermaid
-graph LR
-    S[Supp] --> C[Cost]
-```
-
-### 72. FinOps blueprint
-```mermaid
-graph LR
-    F[FinO] --> B[Blue]
-```
-
-### 73. Zero waste model
-```mermaid
-graph LR
-    Z[Zero] --> M[Map]
-```
-
-### 74. Transformation roadmap
-```mermaid
-graph LR
-    T[Tran] --> R[Road]
-```
-
-### 75. Value realization model
-```mermaid
-graph LR
-    V[Valu] --> R[Real]
-```
-
-### 76. Governance audit trail
-```mermaid
-graph LR
-    G[Govn] --> A[Audi]
-```
-
-### 77. Security RBAC flow
-```mermaid
-graph LR
-    S[Secu] --> R[RBAC]
-```
-
-### 78. Compliance validation
-```mermaid
-graph LR
-    C[Comp] --> V[Vali]
-```
-
-### 79. Billing boundary check
-```mermaid
-graph LR
-    B[Bill] --> B[Boun]
-```
-
-### 80. Executive summary hub
-```mermaid
-graph LR
-    E[Exec] --> H[Hub]
-```
+## 🏛️ Core FinOps Pillars
+
+1.  **Multi-Cloud Cost Normalization**: Abstracting provider-specific billing formats into a unified institutional model.
+2.  **Automated Cost Attribution**: Driving 100% accountability through tag-based and rule-based allocation.
+3.  **Predictive Spend Analytics**: Reducing financial risk through machine-learning-driven cost forecasting.
+4.  **Real-Time Anomaly Detection**: Identifying and alerting on unexpected spend spikes within 24 hours.
+5.  **Commitment Optimization**: Maximizing ROI through automated RI and Savings Plan recommendations.
+6.  **Full Financial Auditability**: Immutable recording of every billing event and optimization decision for institutional forensics.
 
 ---
 
 ## 🛠️ Technical Stack & Implementation
 
-### FinOps & Optimization Engine
-- **Processing**: Python 3.11+ / FastAPI / Pandas.
-- **Normalization**: Unified Billing Schema (FinOps Open Cost & Usage Specification).
-- **Optimization**: Rule-based Rightsizing and RI/SP Coverage Analysis.
+### FinOps Engine & APIs
+*   **Framework**: Python 3.11+ / FastAPI.
+*   **Data Engine**: High-performance billing processing using Pandas and DuckDB.
+*   **Normalization Hub**: Implementation of the FinOps Open Cost & Usage Specification (FOCUS).
+*   **Persistence**: PostgreSQL (Metadata Lake) and Redis (Live Anomaly Cache).
+*   **Auth Orchestrator**: Federated OIDC/SAML for least-privilege financial data access.
 
-### Frontend (FinOps Command Center)
-- **Framework**: React 18 / Vite
-- **Visuals**: Recharts (Spend Trends, Breakdown, Forecast, Budget Tracking).
-- **Theme**: Dark, Gold, and Slate (Institutional FinOps Aesthetics).
+### FinOps Dashboard (UI)
+*   **Framework**: React 18 / Vite.
+*   **Theme**: Dark, Gold, Slate (Modern high-fidelity financial aesthetic).
+*   **Visualization**: Recharts for spend trends, cost breakdowns, and ROI analytics.
 
-### Infrastructure
-- **Cloud**: Multi-Cloud (AWS, Azure, GCP), AWS EKS (Runtime), RDS (Persistence).
-- **IaC**: Terraform (VPC, K8s, RDS, Redis, IAM).
+### Infrastructure & DevOps
+*   **Runtime**: AWS EKS or Azure Kubernetes Service (AKS).
+*   **Data Plane**: Ingestion from AWS CUR (S3), Azure Cost Management API, and GCP Billing Export (BigQuery).
+*   **IaC**: Modular Terraform for deploying the FinOps hub and data processing distributions.
+
+---
+
+## 🏗️ IaC Mapping (Module Structure)
+
+| Module | Purpose | Real Services |
+| :--- | :--- | :--- |
+| **`infrastructure/finops_hub`** | Central management plane | EKS, PostgreSQL, Redis |
+| **`infrastructure/ingestion`** | Provider billing collectors | Lambda, S3, BigQuery |
+| **`infrastructure/analysis`** | Normalization & Attribution | Spark, Flink, Python |
+| **`infrastructure/auditing`** | Forensic financial sinks | S3, Athena, Quicksight |
 
 ---
 
 ## 🚀 Deployment Guide
 
-### Local Development
+### Local Principal Environment
 ```bash
-# Clone the repository
+# Clone the FinOps platform
 git clone https://github.com/devopstrio/multicloud-billing-dashboard.git
 cd multicloud-billing-dashboard
 
-# Setup environment
+# Configure environment
 cp .env.example .env
 
-# Launch the billing dashboard stack
-make up
+# Launch the FinOps stack
+make init
+
+# Trigger a mock multi-cloud billing ingestion and normalization simulation
+make simulate-billing
 ```
+
 Access the FinOps Hub at `http://localhost:3000`.
 
 ---
 
 ## 📜 License
 Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+<div align="center">
+  <p>© 2026 Devopstrio. All rights reserved.</p>
+</div>
